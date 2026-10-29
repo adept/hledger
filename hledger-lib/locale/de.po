@@ -735,36 +735,39 @@ msgstr "Wechsle zum vorigen Bericht"
 msgid "Net, at cost:"
 msgstr "Überschuss, zum Transaktionspreis:"
 
+# machine-translated, please review
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid ""
 "The sum of every account, converted to cost: zero for balanced books; "
 "anything left comes from unbalanced virtual postings."
-msgstr ""
+msgstr "Die Summe aller Konten, zum Transaktionspreis: null bei ausgeglichenen Büchern; ein Rest stammt aus unausgeglichenen virtuellen Buchungszeilen."
 
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid "Unbooked gains:"
 msgstr "Nicht verbuchte Gewinne:"
 
+# machine-translated, please review
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid ""
 "The sum of every account at market value: appreciation not booked by any "
 "entry. If realized gains are booked, this is the unrealized gains."
-msgstr ""
+msgstr "Die Summe aller Konten zum Marktpreis: Wertzuwachs, den keine Buchung erfasst. Wenn realisierte Gewinne verbucht sind, sind dies die nicht realisierten Gewinne."
 
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid "Net flows:"
 msgstr "Nettozuflüsse:"
 
+# machine-translated, please review
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid ""
 "The sum of every account: open positions in each commodity, and the cash "
 "that paid for them. Zero when nothing crosses commodities."
-msgstr ""
+msgstr "Die Summe aller Konten: offene Positionen in jeder Einheit und die Zahlungsmittel, mit denen sie bezahlt wurden. Null, wenn keine Buchung mehrere Einheiten verbindet."
 
 #. the report links above each report page and in the sidebar: each link's text, and its tooltip.
 #: hledger-web/Hledger/Web/App.hs
@@ -807,10 +810,11 @@ msgstr "Zeige die Stände aller Konten unterteilt in Intervalle, wie beim balanc
 msgid "Holdings"
 msgstr "Bestände"
 
+# machine-translated, please review
 #. the report links above each report page and in the sidebar: each link's text, and its tooltip.
 #: hledger-web/Hledger/Web/App.hs
 msgid "Show investment holdings, lots, and gains"
-msgstr ""
+msgstr "Zeige Anlagebestände, Tranchen und Gewinne"
 
 #: hledger-web/Hledger/Web/Paging.hs
 #, python-brace-format
@@ -960,23 +964,26 @@ msgstr "Unbekannte Betragsumrechnung:"
 msgid "The {name} parameter has a value this page does not know:"
 msgstr "Der Parameter {name} hat einen Wert, der nicht unterstützt wird:"
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/ReportPage.hs
 msgid ""
 "Value changes and gains are figured from period-end market values: leave the "
 "value parameter off, or use value=end."
-msgstr ""
+msgstr "Wertänderungen und Gewinne werden aus Marktwerten zum Periodenende berechnet: lassen Sie den Parameter value weg, oder verwenden Sie value=end."
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/ReportPage.hs
 msgid ""
 "Gains compare market value against cost, so they do not combine with "
 "value=cost."
-msgstr ""
+msgstr "Gewinne vergleichen den Marktwert mit den Anschaffungskosten und lassen sich daher nicht mit value=cost kombinieren."
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/ReportPage.hs
 msgid ""
 "This report is at a single date, so value=then does not apply: use "
 "value=end, value=now, or a date."
-msgstr ""
+msgstr "Dieser Bericht gilt für ein einzelnes Datum, daher ist value=then nicht anwendbar: verwenden Sie value=end, value=now oder ein Datum."
 
 #: hledger-web/Hledger/Web/ReportPage.hs
 msgid "Show this report for this period"
@@ -1076,25 +1083,29 @@ msgstr "Gesamtsumme"
 msgid "Weight"
 msgstr "Gewichtung"
 
+# machine-translated, please review
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
 msgid "UGain"
-msgstr ""
+msgstr "Unreal. Gew."
 
+# machine-translated, please review
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
 msgid "UGain%"
-msgstr ""
+msgstr "Unreal. Gew. %"
 
+# machine-translated, please review
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
 msgid "RGain"
-msgstr ""
+msgstr "Real. Gew."
 
+# machine-translated, please review
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
 msgid "XIRR"
-msgstr ""
+msgstr "XIRR"
 
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
@@ -1335,25 +1346,29 @@ msgstr "Diese Einstellungen beziehen sich auf die Abrechnungen"
 msgid "Prices:"
 msgstr "Preise:"
 
+# machine-translated, please review
 #. the label before a page's market price source links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Declared"
-msgstr ""
+msgstr "Deklariert"
 
+# machine-translated, please review
 #. the label before a page's market price source links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Value amounts using declared market prices (P directives) only"
-msgstr ""
+msgstr "Bewerte Beträge nur mit deklarierten Marktpreisen (P-Direktiven)"
 
+# machine-translated, please review
 #. the label before a page's market price source links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Inferred too"
-msgstr ""
+msgstr "Auch abgeleitete"
 
+# machine-translated, please review
 #. the label before a page's market price source links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Infer market prices from transaction costs too (--infer-market-prices)"
-msgstr ""
+msgstr "Leite Marktpreise auch aus Transaktionspreisen ab (--infer-market-prices)"
 
 #. the label before a report's depth links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
@@ -1454,561 +1469,665 @@ msgstr "Angezeigt"
 msgid "Equity:"
 msgstr "Vermögen:"
 
+# machine-translated, please review
 #. the label before the balance sheet's links that hide or show equity, and the links' tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid ""
 "Show assets, liabilities, and net worth, as the balancesheet command does"
-msgstr ""
+msgstr "Zeige Vermögen, Verbindlichkeiten und Reinvermögen, wie der Befehl balancesheet"
 
+# machine-translated, please review
 #. the label before the balance sheet's links that hide or show equity, and the links' tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid ""
 "Show assets, liabilities, and equity, as the balancesheetequity command does"
-msgstr ""
+msgstr "Zeige Vermögen, Verbindlichkeiten und Eigenkapital, wie der Befehl balancesheetequity"
 
+# machine-translated, please review
 #. the label before the links that show or hide zero balances, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Hide accounts whose balances are zero"
-msgstr ""
+msgstr "Blende Konten aus, deren Stände null sind"
 
+# machine-translated, please review
 #. the label before the links that show or hide zero balances, and the links' text and tooltips.
 #. the label before the balance sheet's links that hide or show equity, and the links' tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Hidden"
-msgstr ""
+msgstr "Ausgeblendet"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #: hledger-web/templates/default-layout.hamlet
 msgid "Status:"
-msgstr ""
+msgstr "Status:"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show transactions of any status"
-msgstr ""
+msgstr "Zeige Buchungen mit jedem Status"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "status"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Unmarked"
-msgstr ""
+msgstr "Unmarkiert"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only unmarked transactions (status:)"
-msgstr ""
+msgstr "Zeige nur unmarkierte Buchungen (status:)"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Pending"
-msgstr ""
+msgstr "Ausstehend"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only pending transactions (status:!)"
-msgstr ""
+msgstr "Zeige nur ausstehende Buchungen (status:!)"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Cleared"
-msgstr ""
+msgstr "Beglichen"
 
+# machine-translated, please review
 #. the label before a report's status filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only cleared transactions (status:*)"
-msgstr ""
+msgstr "Zeige nur beglichene Buchungen (status:*)"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #: hledger-web/templates/default-layout.hamlet
 msgid "Postings:"
-msgstr ""
+msgstr "Buchungszeilen:"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show real and virtual postings"
-msgstr ""
+msgstr "Zeige reale und virtuelle Buchungszeilen"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "postings"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Real"
-msgstr ""
+msgstr "Real"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only real postings, as -R does (real:1)"
-msgstr ""
+msgstr "Zeige nur reale Buchungszeilen, wie -R (real:1)"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Virtual"
-msgstr ""
+msgstr "Virtuell"
 
+# machine-translated, please review
 #. the label before a report's real/virtual filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only virtual postings, the parenthesized ones (real:0)"
-msgstr ""
+msgstr "Zeige nur virtuelle Buchungszeilen, die eingeklammerten (real:0)"
 
+# machine-translated, please review
 #. the label before a report's list/tree links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #: hledger-web/templates/default-layout.hamlet
 msgid "Accounts:"
-msgstr ""
+msgstr "Konten:"
 
+# machine-translated, please review
 #. the label before a report's list/tree links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show accounts as a flat list (--flat)"
-msgstr ""
+msgstr "Zeige Konten als flache Liste (--flat)"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's list/tree links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "accounts"
 msgid "List"
-msgstr ""
+msgstr "Liste"
 
+# machine-translated, please review
 #. the label before a report's list/tree links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show accounts as a tree (--tree)"
-msgstr ""
+msgstr "Zeige Konten als Baum (--tree)"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's list/tree links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "accounts"
 msgid "Tree"
-msgstr ""
+msgstr "Baum"
 
+# machine-translated, please review
 #. the label before a report's extra-column toggles, and the toggles' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #: hledger-web/templates/default-layout.hamlet
 msgid "Extra columns:"
-msgstr ""
+msgstr "Zusatzspalten:"
 
+# machine-translated, please review
 #. the label before a report's extra-column toggles, and the toggles' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Add a column totaling each row (-T)"
-msgstr ""
+msgstr "Füge eine Spalte mit der Summe jeder Zeile hinzu (-T)"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #. the label before a report's extra-column toggles, and the toggles' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "column"
 msgid "Total"
-msgstr ""
+msgstr "Gesamt"
 
+# machine-translated, please review
 #. the label before a report's extra-column toggles, and the toggles' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Add a column averaging each row (-A)"
-msgstr ""
+msgstr "Füge eine Spalte mit dem Durchschnitt jeder Zeile hinzu (-A)"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #. the label before a report's extra-column toggles, and the toggles' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "column"
 msgid "Average"
-msgstr ""
+msgstr "Durchschnitt"
 
+# machine-translated, please review
 #. the label before a report's sort links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #: hledger-web/templates/default-layout.hamlet
 msgid "Sort:"
-msgstr ""
+msgstr "Sortierung:"
 
+# machine-translated, please review
 #. the label before a report's sort links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "By account"
-msgstr ""
+msgstr "Nach Konto"
 
+# machine-translated, please review
 #. the label before a report's sort links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Sort rows by account display order"
-msgstr ""
+msgstr "Sortiere die Zeilen in der Anzeigereihenfolge der Konten"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's sort links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "By amount"
-msgstr ""
+msgstr "Nach Betrag"
 
+# machine-translated, please review
 #. the label before a report's sort links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Sort rows by their amounts, largest first (-S)"
-msgstr ""
+msgstr "Sortiere die Zeilen nach ihren Beträgen, größte zuerst (-S)"
 
+# machine-translated, please review
 #. the label before a report's amounts/percentages links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Numbers:"
-msgstr ""
+msgstr "Zahlen:"
 
+# machine-translated, please review
 #. the label before a report's amounts/percentages links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show the amounts"
-msgstr ""
+msgstr "Zeige die Beträge"
 
+# machine-translated, please review
 #. the label before a report's amounts/percentages links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "numbers"
 msgid "Amounts"
-msgstr ""
+msgstr "Beträge"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's amounts/percentages links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Percentages"
-msgstr ""
+msgstr "Prozentanteile"
 
+# machine-translated, please review
 #. the label before a report's amounts/percentages links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show each amount as a percentage of its column's total (-%)"
-msgstr ""
+msgstr "Zeige jeden Betrag als Prozentanteil an der Summe seiner Spalte (-%)"
 
+# machine-translated, please review
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Calculate:"
-msgstr ""
+msgstr "Berechnung:"
 
+# machine-translated, please review
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show sums of postings"
-msgstr ""
+msgstr "Zeige Summen der Buchungszeilen"
 
+# machine-translated, please review
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "calculation"
 msgid "Sums"
-msgstr ""
+msgstr "Summen"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Value change"
-msgstr ""
+msgstr "Wertänderung"
 
+# machine-translated, please review
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show how period-end market values changed (--valuechange)"
-msgstr ""
+msgstr "Zeige, wie sich die Marktwerte zum Periodenende verändert haben (--valuechange)"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Unrealized gain"
-msgstr ""
+msgstr "Nicht realisierter Gewinn"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Inferred prices"
-msgstr ""
+msgstr "Abgeleitete Preise"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Zero balances hidden"
-msgstr ""
+msgstr "Nullsummen ausgeblendet"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Zero balances shown"
-msgstr ""
+msgstr "Nullsummen angezeigt"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Lots shown"
-msgstr ""
+msgstr "Tranchen angezeigt"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Costs shown"
-msgstr ""
+msgstr "Transaktionspreise angezeigt"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Closed positions shown"
-msgstr ""
+msgstr "Geschlossene Positionen angezeigt"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Closed positions hidden"
-msgstr ""
+msgstr "Geschlossene Positionen ausgeblendet"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Secondary dates"
-msgstr ""
+msgstr "Zweitdaten"
 
+# machine-translated, please review
 #. options in effect, listed on the closed options disclosure.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Equity shown"
-msgstr ""
+msgstr "Eigenkapital angezeigt"
 
+# machine-translated, please review
 #. a journal or register page's heading when the search has dates, eg "General Journal in 2024".
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #, python-brace-format
 msgid "{title} in {dates}"
-msgstr ""
+msgstr "{title} in {dates}"
 
+# machine-translated, please review
 #. a journal or register page's heading when the search has dates, eg "General Journal in 2024".
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #, python-brace-format
 msgid "{title} in {dates}, filtered"
-msgstr ""
+msgstr "{title} in {dates}, gefiltert"
 
+# machine-translated, please review
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show unrealized capital gains: market value minus cost (--gain)"
-msgstr ""
+msgstr "Zeige nicht realisierte Kursgewinne: Marktwert minus Anschaffungskosten (--gain)"
 
+# machine-translated, please review
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Count the postings instead of summing them (--count)"
-msgstr ""
+msgstr "Zähle die Buchungszeilen, statt sie zu summieren (--count)"
 
+# machine-translated, please review
 #. the label before the register's cost links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Costs:"
-msgstr ""
+msgstr "Transaktionspreise:"
 
+# machine-translated, please review
 #. the label before the register's cost links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show amounts without their costs"
-msgstr ""
+msgstr "Zeige Beträge ohne ihre Transaktionspreise"
 
+# machine-translated, please review
 #. the label before the register's cost links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "costs"
 msgid "Hidden"
-msgstr ""
+msgstr "Ausgeblendet"
 
+# machine-translated, please review
 #. the label before the register's cost links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show amounts with the costs recorded in the journal"
-msgstr ""
+msgstr "Zeige Beträge mit den im Journal verbuchten Transaktionspreisen"
 
+# machine-translated, please review
 #. the label before the register's cost links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "costs"
 msgid "Shown"
-msgstr ""
+msgstr "Angezeigt"
 
+# machine-translated, please review
 #. the label before a report's lot detail links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #: hledger-web/templates/default-layout.hamlet
 msgid "Lots:"
-msgstr ""
+msgstr "Tranchen:"
 
+# machine-translated, please review
 #. the label before a report's lot detail links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Aggregate each account's lots"
-msgstr ""
+msgstr "Fasse die Tranchen jedes Kontos zusammen"
 
+# machine-translated, please review
 #. the label before a report's lot detail links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "lots"
 msgid "Hidden"
-msgstr ""
+msgstr "Ausgeblendet"
 
+# machine-translated, please review
 #. the label before a report's lot detail links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show each lot separately (--lots)"
-msgstr ""
+msgstr "Zeige jede Tranche einzeln (--lots)"
 
+# machine-translated, please review
 #. the label before a report's lot detail links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "lots"
 msgid "Shown"
-msgstr ""
+msgstr "Angezeigt"
 
+# machine-translated, please review
 #. the label before the holdings page's closed-position links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Closed positions:"
-msgstr ""
+msgstr "Geschlossene Positionen:"
 
+# machine-translated, please review
 #. the label before the holdings page's closed-position links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only open positions"
-msgstr ""
+msgstr "Zeige nur offene Positionen"
 
+# machine-translated, please review
 #. the label before the holdings page's closed-position links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "closed"
 msgid "Hidden"
-msgstr ""
+msgstr "Ausgeblendet"
 
+# machine-translated, please review
 #. the label before the holdings page's closed-position links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Also show fully disposed positions and their realized gains (-E)"
-msgstr ""
+msgstr "Zeige auch vollständig veräußerte Positionen und ihre realisierten Gewinne (-E)"
 
+# machine-translated, please review
 #. the label before the holdings page's closed-position links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "closed"
 msgid "Shown"
-msgstr ""
+msgstr "Angezeigt"
 
+# machine-translated, please review
 #. the label before the holdings page's valuation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Values:"
-msgstr ""
+msgstr "Werte:"
 
+# machine-translated, please review
 #. the label before the holdings page's valuation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Per cost commodity"
-msgstr ""
+msgstr "In Anschaffungswährung"
 
+# machine-translated, please review
 #. the label before the holdings page's valuation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Value each holding in its own cost commodity"
-msgstr ""
+msgstr "Bewerte jeden Bestand in seiner eigenen Anschaffungswährung"
 
+# machine-translated, please review
 #. the label before the holdings page's valuation links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Convert values and costs to the market valuation commodity (-V)"
-msgstr ""
+msgstr "Rechne Werte und Anschaffungskosten in die Bewertungswährung um (-V)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Type:"
-msgstr ""
+msgstr "Typ:"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show accounts of every type"
-msgstr ""
+msgstr "Zeige Konten aller Typen"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "account type"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Asset"
-msgstr ""
+msgstr "Vermögen"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only asset accounts (type:A)"
-msgstr ""
+msgstr "Zeige nur Vermögenskonten (type:A)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Liability"
-msgstr ""
+msgstr "Verbindlichkeiten"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only liability accounts (type:L)"
-msgstr ""
+msgstr "Zeige nur Verbindlichkeitskonten (type:L)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only equity accounts (type:E)"
-msgstr ""
+msgstr "Zeige nur Eigenkapitalkonten (type:E)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Revenue"
-msgstr ""
+msgstr "Einnahmen"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only revenue accounts (type:R)"
-msgstr ""
+msgstr "Zeige nur Einnahmenkonten (type:R)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Expense"
-msgstr ""
+msgstr "Ausgaben"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only expense accounts (type:X)"
-msgstr ""
+msgstr "Zeige nur Ausgabenkonten (type:X)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Cash"
-msgstr ""
+msgstr "Zahlungsmittel"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only cash accounts (type:C)"
-msgstr ""
+msgstr "Zeige nur Zahlungsmittelkonten (type:C)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Conversion"
-msgstr ""
+msgstr "Umrechnung"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only conversion accounts (type:V)"
-msgstr ""
+msgstr "Zeige nur Umrechnungskonten (type:V)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Gain"
-msgstr ""
+msgstr "Kursgewinne"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only capital gain accounts (type:G)"
-msgstr ""
+msgstr "Zeige nur Konten für Kursgewinne (type:G)"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Imbalance"
-msgstr ""
+msgstr "Differenzen"
 
+# machine-translated, please review
 #. the label before the account type filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show only imbalance accounts (type:M)"
-msgstr ""
+msgstr "Zeige nur Differenzkonten (type:M)"
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "List all the commodities"
-msgstr ""
+msgstr "Alle Einheiten und Währungen auflisten"
 
+# machine-translated, please review
 #. the label before a page's commodity filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Commodity:"
-msgstr ""
+msgstr "Einheit oder Währung:"
 
+# machine-translated, please review
 #. the label before a page's commodity filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show amounts in every commodity"
-msgstr ""
+msgstr "Zeige Beträge in allen Einheiten und Währungen"
 
+# machine-translated, please review
 #. the label before a page's commodity filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "commodity"
 msgid "All"
-msgstr ""
+msgstr "Alle"
 
+# machine-translated, please review
 #. the label before a page's commodity filter links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #, python-brace-format
 msgid "Show only amounts in {commodity}"
-msgstr ""
+msgstr "Zeige nur Beträge in {commodity}"
 
+# machine-translated, please review
 #. the note for a balance, or the register chart, showing fewer commodities than it has.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 #, python-brace-format
 msgid "… and {n} more"
-msgstr ""
+msgstr "… und {n} weitere"
 
 #: hledger-web/templates/add-form.hamlet
 msgid "Pick a date"
@@ -2140,9 +2259,10 @@ msgstr "abbrechen"
 msgid "Report options"
 msgstr "Berichteinstellungen"
 
+# machine-translated, please review
 #: hledger-web/templates/default-layout.hamlet
 msgid "historical end balances / balance changes"
-msgstr ""
+msgstr "historische Endsalden / Saldoänderungen"
 
 #: hledger-web/templates/default-layout.hamlet
 msgid "yearly"
@@ -2212,9 +2332,10 @@ msgstr "zum Marktpreis"
 msgid "show / hide zero balances"
 msgstr "zeige oder verberge Nullsummen"
 
+# machine-translated, please review
 #: hledger-web/templates/default-layout.hamlet
 msgid "show / hide lot details"
-msgstr ""
+msgstr "zeige oder verberge Tranchendetails"
 
 #: hledger-web/templates/default-layout.hamlet
 msgctxt "column"

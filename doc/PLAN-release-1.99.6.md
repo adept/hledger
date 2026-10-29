@@ -131,6 +131,8 @@ In order.
   links, "Report details", the zero-balances message, and in de the "Transaktionspreis" cost entries.
   Not marked: Dmitry Astapov's ru wording review (812f719b2), and trims or fixes of human text
   (the shortened help lines, the boolean-query parenthesis).
+  At Henning's request, de's 121 untranslated entries were then machine-filled and marked the same way,
+  so he can review them before the deadline.
 - [ ] **Fill the gaps** (after the deadline, before `just ghbin`): `just i18n-pot`, `just i18n-merge`
   (which now unwraps the catalogs, one line per string: a one-off layout diff, kept separate in its own commit), then
   machine-translate every entry still untranslated in every catalog, each marked with the translator comment
