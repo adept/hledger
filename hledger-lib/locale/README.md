@@ -27,16 +27,16 @@ and the maintainer as committer, with the commit message saying how it arrived.
 
 | Language | Translators | Status |
 |---|---|---|
-| de | Arthur Cinader (@acinader), Henning Thielemann (@thielema) | |
-| es | | machine-made, not yet checked by a native speaker |
-| fr | | machine-made, not yet checked by a native speaker |
-| ga | | machine-made, not yet checked by a native speaker |
-| haw | | machine-made, not yet checked by a native speaker |
-| it | Diego Depaoli | a draft, completed by machine; machine-made entries are marked |
-| ja | | machine-made, not yet checked by a native speaker |
-| pt-BR | | machine-made, not yet checked by a native speaker |
-| ru | Daniil Iaitskov (@yaitskov) | |
-| zh-Hans | Chunhui Ouyang (@jack9603301) | |
+| [de](#german) | Arthur Cinader (@acinader), Henning Thielemann (@thielema) | some entries machine-made; these are marked |
+| [es](#spanish) | | machine-made, not yet checked by a native speaker |
+| [fr](#french) | | machine-made, not yet checked by a native speaker |
+| [ga](#irish) | | machine-made, not yet checked by a native speaker |
+| [haw](#hawaiian) | | machine-made, not yet checked by a native speaker |
+| [it](#italian) | Diego Depaoli | a draft, completed by machine; machine-made entries are marked |
+| [ja](#japanese) | | machine-made, not yet checked by a native speaker |
+| [pt-BR](#brazilian-portuguese) | | machine-made, not yet checked by a native speaker |
+| [ru](#russian) | Daniil Iaitskov (@yaitskov) | some entries machine-made; these are marked |
+| [zh-Hans](#simplified-chinese) | Chunhui Ouyang (@jack9603301) | some entries machine-made; these are marked |
 
 Also interested in hledger's i18n: Arthur Cinader (@acinader), who built
 it (#2736), and @mildred, @alerque (#1025) and @weakish (#231), who asked
