@@ -252,9 +252,11 @@ builtinCatalogSources :: [(Text, ByteString)]
 builtinCatalogSources =
   [ ("de",      $(embedFileRelativeBytes "locale/de.po"))
   , ("es",      $(embedFileRelativeBytes "locale/es.po"))
+  , ("fr",      $(embedFileRelativeBytes "locale/fr.po"))
   , ("ga",      $(embedFileRelativeBytes "locale/ga.po"))
   , ("haw",     $(embedFileRelativeBytes "locale/haw.po"))
   , ("ja",      $(embedFileRelativeBytes "locale/ja.po"))
+  , ("pt-BR",   $(embedFileRelativeBytes "locale/pt-BR.po"))
   , ("ru",      $(embedFileRelativeBytes "locale/ru.po"))
   , ("zh-Hans", $(embedFileRelativeBytes "locale/zh-Hans.po"))
   ]
@@ -936,13 +938,13 @@ tests_I18n = testGroup "I18n" [
   ,testCase "startingCatalog" $ do
      let tagOf = fmap (\(t, b, _) -> (t, b)) . startingCatalog
      tagOf "de-AT" @?= Right ("de", True)
-     tagOf "fr_FR" @?= Right ("fr-FR", False)
+     tagOf "it_IT" @?= Right ("it-IT", False)
      assertBool "en" $ isLeft $ startingCatalog "en"
      assertBool "not a tag" $ isLeft $ startingCatalog "x"
      -- a new language's catalog, made from the template, is usable as it is
-     case startingCatalog "fr" of
+     case startingCatalog "it" of
        Right (_, _, bs) -> do
-         t <- either assertFailure return $ parsePo "fr" "fr" $ TE.decodeUtf8With lenientDecode bs
+         t <- either assertFailure return $ parsePo "it" "it" $ TE.decodeUtf8With lenientDecode bs
          assertBool "plural rule" $ isJust $ trPluralForms t
        Left e -> assertFailure e
      -- with the language's plural rule, if known

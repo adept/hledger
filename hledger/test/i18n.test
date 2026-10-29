@@ -182,14 +182,32 @@ Pepa Kaulike 2008-12-31
 $ XDG_CONFIG_HOME=/nonexistent hledger -f sample.journal is -M --lang haw | head -1
 Hōʻike Loaʻa a me Hoʻolilo o ka Mahina 2008
 
-# ** 18. --write-lang writes a catalog to translate into the config directory, where --lang finds it:
+# ** 18. French is built in, and regional tags fall back to it.
+$ XDG_CONFIG_HOME=/nonexistent hledger -f sample.journal bs --lang fr | head -1
+Bilan 2008-12-31
+
+$ XDG_CONFIG_HOME=/nonexistent hledger -f sample.journal bs --lang fr_CA | head -1
+Bilan 2008-12-31
+
+# The interval word goes where French needs it.
+$ XDG_CONFIG_HOME=/nonexistent hledger -f sample.journal cf -M --lang fr | head -1
+Tableau mensuel des flux de trésorerie 2008
+
+# ** 19. Brazilian Portuguese is built in, selected by pt_BR or pt-BR.
+$ XDG_CONFIG_HOME=/nonexistent hledger -f sample.journal bs --lang pt_BR | head -1
+Balanço Patrimonial 2008-12-31
+
+$ XDG_CONFIG_HOME=/nonexistent hledger -f sample.journal is -M --lang pt-BR | head -1
+Demonstração Mensal do Resultado 2008
+
+# ** 20. --write-lang writes a catalog to translate into the config directory, where --lang finds it:
 # the built-in catalog for a language that has one, as it is,
 $ d=$(mktemp -d) && XDG_CONFIG_HOME=$d hledger --write-lang de_AT | head -1 | sed 's,/.*/,DIR/,' && cmp $d/hledger/locale/de.po ../../hledger-lib/locale/de.po && echo same; rm -rf $d
 Wrote hledger's built-in de catalog to DIR/de.po.
 same
 
 # and otherwise a new one made from the template, usable without changes.
-$ d=$(mktemp -d) && XDG_CONFIG_HOME=$d hledger --write-lang fr >/dev/null && XDG_CONFIG_HOME=$d hledger -f sample.journal bs --lang fr 2>&1 | head -1; rm -rf $d
+$ d=$(mktemp -d) && XDG_CONFIG_HOME=$d hledger --write-lang it >/dev/null && XDG_CONFIG_HOME=$d hledger -f sample.journal bs --lang it 2>&1 | head -1; rm -rf $d
 Balance Sheet 2008-12-31
 
 # It does not overwrite a catalog the user has already.

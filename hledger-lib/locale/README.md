@@ -27,9 +27,11 @@ email addresses are in the git log.
 |---|---|---|
 | de | Arthur Cinader (@acinader), Henning Thielemann (@thielema) | |
 | es | | machine-made, not yet checked by a native speaker |
+| fr | | machine-made, not yet checked by a native speaker |
 | ga | | machine-made, not yet checked by a native speaker |
 | haw | | machine-made, not yet checked by a native speaker |
 | ja | | machine-made, not yet checked by a native speaker |
+| pt-BR | | machine-made, not yet checked by a native speaker |
 | ru | Daniil Iaitskov (@yaitskov) | |
 | zh-Hans | Chunhui Ouyang (@jack9603301) | |
 
@@ -256,3 +258,82 @@ Choices to check:
 - Hōʻike is both "show" (in the tooltips) and "report" (in titles).
 - The shortened holdings column headings (Puka L.ʻO., Puka L.) are
   guesses.
+
+## French
+
+Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
+corrections are welcome. The statement names are those of France's plan
+comptable général (Bilan, Compte de résultat, Tableau des flux de
+trésorerie), and the account words match `examples/i18n/fr.journal`.
+Regional tags like `fr-CA`, `fr-BE` or `fr_FR` select it too. Viewers are
+addressed formally (vous), and actions are infinitives (Afficher,
+Masquer), as is usual in French software.
+
+| English | French |
+|---|---|
+| Balance Sheet / With Equity | Bilan / Bilan avec capitaux propres |
+| Income Statement | Compte de résultat |
+| Cashflow Statement | Tableau des flux de trésorerie |
+| Assets / Liabilities / Equity | Actifs / Passifs / Capitaux propres |
+| Revenues / Expenses | Revenus / Dépenses |
+| Net: | Net : |
+| Total / Average | Total / Moyenne |
+| Account / Amount / Commodity | Compte / Montant / Unité |
+| transaction / posting / journal entry | opération / mouvement / écriture |
+| Register / Holdings | Registre / Portefeuille |
+| Balance changes / Ending balances | Variations de solde / Soldes de clôture |
+| Cost / Value | Coût / Valeur (de marché) |
+| Unrealized gain / loss | Plus-value / Moins-value latente |
+| Cleared / Pending / Unmarked | Rapprochées / En attente / Non marquées |
+| Balance brought forward | Solde reporté |
+
+Choices to check:
+
+- Revenus / Dépenses, everyday terms suited to personal and small-business
+  use, rather than the PCG's Produits / Charges, which pair with "Compte
+  de résultat". Anyone keeping books under the PCG can override them in
+  `~/.config/hledger/locale/fr.po`.
+- "Net :" and the other labels have a space before the colon, as French
+  typography wants (an ordinary space, not a non-breaking one).
+- Biweekly is "par quinzaine" (Bilan par quinzaine), avoiding the
+  ambiguous "bimensuel"; bimonthly is "bimestriel".
+- Appended fragments avoid agreement: ", au coût", ", à la valeur de
+  marché en fin de chaque période", "{title}, avec filtre".
+
+## Brazilian Portuguese
+
+Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
+corrections are welcome. The statement names are the ones used in Brazil
+(Balanço Patrimonial, Demonstração do Resultado, Demonstração dos Fluxos
+de Caixa). It is selected by `pt-BR` or `pt_BR`; plain `pt`, Portugal's
+Portuguese, is a different language tag and does not select it.
+
+| English | Brazilian Portuguese |
+|---|---|
+| Balance Sheet / With Equity | Balanço Patrimonial / Balanço Patrimonial com Patrimônio Líquido |
+| Income Statement | Demonstração do Resultado |
+| Cashflow Statement | Demonstração dos Fluxos de Caixa |
+| Assets / Liabilities / Equity | Ativos / Passivos / Patrimônio Líquido |
+| Revenues / Expenses | Receitas / Despesas |
+| Net: | Líquido: |
+| Total / Average | Total / Média |
+| Account / Amount / Commodity | Conta / Valor / Unidade |
+| transaction / posting / journal entry | transação / partida / lançamento |
+| Journal (hledger-web's view) / Register / Holdings | Livro diário / Extrato / Carteira |
+| Balance changes / Ending balances | Variações de saldo / Saldos finais |
+| Cost / Value | Custo / Valor de mercado |
+| Unrealized gain / loss | Ganho / Perda não realizada |
+| Cleared / Pending / Unmarked | Conciliadas / Pendentes / Não marcadas |
+| Balance brought forward | Saldo anterior |
+
+Choices to check:
+
+- Valor for Amount, as Brazilian banking software uses it, so Value is
+  always "Valor de mercado" (including the holdings page's column), to
+  keep the two apart.
+- Patrimônio Líquido for Equity, rather than `examples/i18n/pt.journal`'s
+  European "capital próprio"; it also serves for net worth.
+- hledger-web's Journal view is "Livro diário", since "Diário" alone is
+  its Daily interval link; the journal file is "o diário".
+- Register is "Extrato", like a bank statement, and posting is "partida"
+  (as in partidas dobradas), leaving "lançamento" for journal entries.

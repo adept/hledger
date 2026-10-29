@@ -54,16 +54,16 @@ translatable string.
 4. Repeat 2 and 3 until you are happy.
 5. Send the file in (by mail is fine).
 
-The rest of this guide goes through each step with French as the example.
+The rest of this guide goes through each step with Italian as the example.
 
 ## Step 1: get your language's file
 
 Run hledger with `--write-lang` and your language's tag:
 
 ```
-$ hledger --write-lang=fr
-Wrote a new, untranslated fr catalog to /home/you/.config/hledger/locale/fr.po.
-Edit it with Poedit or a text editor; hledger --lang fr uses it from now on.
+$ hledger --write-lang=it
+Wrote a new, untranslated it catalog to /home/you/.config/hledger/locale/it.po.
+Edit it with Poedit or a text editor; hledger --lang it uses it from now on.
 To share your translation, see https://hledger.org/TRANSLATING.html.
 ```
 
@@ -155,11 +155,11 @@ with VERSION replaced by your hledger's version number, eg `1.99.5`.
 the same place instead.) Then:
 
 - **With Poedit:** File > New From POT/PO File, choose `hledger.pot`, pick
-  your language when asked, and save as `fr.po` (changing the name Poedit
+  your language when asked, and save as `it.po` (changing the name Poedit
   suggests, if needed). Poedit fills in the file header, including the
   plural rule for your language. The header's `Language:` line can stay
   as Poedit writes it; hledger goes by the file name.
-- **With a text editor:** copy `hledger.pot` to `fr.po`, set `Language`
+- **With a text editor:** copy `hledger.pot` to `it.po`, set `Language`
   and `Plural-Forms` in its header as above, and remove the `#, fuzzy`
   line above the header: it marks the whole file as a draft.
 
@@ -263,57 +263,57 @@ you can test without rebuilding anything:
 
 | System | Your file is at |
 |---|---|
-| Linux, macOS | `~/.config/hledger/locale/fr.po` |
-| Windows | `%APPDATA%\hledger\locale\fr.po` |
+| Linux, macOS | `~/.config/hledger/locale/it.po` |
+| Windows | `%APPDATA%\hledger\locale\it.po` |
 
-Then, once a few entries are translated, run some reports with `--lang fr`
-(this is what a French file translating the balance sheet's four strings gives):
+Then, once a few entries are translated, run some reports with `--lang it`
+(this is what an Italian file translating the balance sheet's four strings gives):
 
 ```
-$ hledger -f sample.journal balancesheet --lang fr
-Bilan 2026-02-14
+$ hledger -f sample.journal balancesheet --lang it
+Stato patrimoniale 2026-02-14
 
                       || 2026-02-14 
 ======================++============
- Actifs               ||            
+ Attività             ||            
 ----------------------++------------
  assets:bank:checking ||     75 EUR 
 ----------------------++------------
                       ||     75 EUR 
 ======================++============
- Passifs              ||            
+ Passività            ||            
 ----------------------++------------
 ----------------------++------------
                       ||          0 
 ======================++============
- Solde:               ||     75 EUR 
+ Netto:               ||     75 EUR 
 ```
 
 Commands that between them show most of the translatable text:
 
 ```
-hledger -f sample.journal balancesheet --lang fr
-hledger -f sample.journal incomestatement --lang fr -M -T -A
-hledger -f sample.journal cashflow --lang fr
-hledger -f sample.journal balance --lang fr -M
-hledger -f sample.journal balance --lang fr -Q --value=then
-hledger -f sample.journal balance --lang fr --budget -M
-hledger-ui -f sample.journal --lang fr
-hledger-web -f sample.journal --lang fr
+hledger -f sample.journal balancesheet --lang it
+hledger -f sample.journal incomestatement --lang it -M -T -A
+hledger -f sample.journal cashflow --lang it
+hledger -f sample.journal balance --lang it -M
+hledger -f sample.journal balance --lang it -Q --value=then
+hledger -f sample.journal balance --lang it --budget -M
+hledger-ui -f sample.journal --lang it
+hledger-web -f sample.journal --lang it
 ```
 
 For hledger-web you can also leave `--lang` off and open
-`http://127.0.0.1:5000/?_LANG=fr` in your browser, or set your browser's
-preferred language to French; the choice is remembered in a cookie. The
+`http://127.0.0.1:5000/?_LANG=it` in your browser, or set your browser's
+preferred language to Italian; the choice is remembered in a cookie. The
 add form (press `a`), its validation messages (submit it empty), the
 help dialog (press `h`) and the file management pages (the wrench icon,
 with `--allow=edit`) each have their own strings. hledger-web reads the
 catalogs when it starts, so restart it after editing your file; hledger
 itself reads the file on every run.
 
-If you have hledger's source code, `just i18n-web fr` shows all of
+If you have hledger's source code, `just i18n-web it` shows all of
 hledger-web's pages in one go, as text: it starts hledger-web, requests
-each page as a French-preferring browser would (including the file pages
+each page as an Italian-preferring browser would (including the file pages
 and the add form's validation messages), and prints the text and
 tooltips of each, using your file.
 
@@ -336,11 +336,11 @@ to it.
 
 - By mail: attach the file to a message on the
   [mail list](https://hledger.org/support.html), and someone will add it.
-- If you use GitHub: add it as `hledger-lib/locale/fr.po` and open a pull
+- If you use GitHub: add it as `hledger-lib/locale/it.po` and open a pull
   request. Two one-line changes are also needed to build it into hledger,
   and a maintainer will add them if you would rather not: list the file
   under `extra-source-files` in `hledger-lib/package.yaml`, and add
-  `("fr", $(embedFileRelativeBytes "locale/fr.po"))` to
+  `("it", $(embedFileRelativeBytes "locale/it.po"))` to
   `builtinCatalogSources` in `hledger-lib/Hledger/Utils/I18n.hs`.
   The file name and the tag given there must both be the language's tag
   in hledger's form (see step 1), or `--lang` can not select it.
@@ -379,7 +379,7 @@ step 1, so every release ships complete catalogs.
 
 To refresh your file:
 
-- With the gettext tools: `msgmerge --update --no-fuzzy-matching --no-wrap fr.po hledger.pot`.
+- With the gettext tools: `msgmerge --update --no-fuzzy-matching --no-wrap it.po hledger.pot`.
   New entries, and entries whose English changed, appear untranslated.
   An entry whose English changed keeps its old translation at the end of
   the file, as an obsolete `#~` entry, for reference.

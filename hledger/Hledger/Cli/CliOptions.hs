@@ -105,7 +105,7 @@ import Control.Exception qualified as C
 import Control.Monad (when)
 import Data.Char
 import Data.Default
-import Data.List.Extra (intercalate, nubOrd, nubSort)
+import Data.List.Extra (intercalate, nubSort)
 import Data.List.NonEmpty qualified as NE (NonEmpty, fromList, nonEmpty)
 import Data.List.Split (splitOn)
 import Data.Maybe
@@ -126,7 +126,7 @@ import System.Info (os)
 import Text.Megaparsec
 import Text.Megaparsec.Char
 
-import Hledger.Utils.I18n (builtinLanguages, translationsForLangOption)
+import Hledger.Utils.I18n (builtinLanguages, shortLangTag, translationsForLangOption)
 import Hledger
 import Hledger.Cli.DocFiles
 import Hledger.Cli.GitInfo (gitInfo)
@@ -315,10 +315,11 @@ terminalflags = [
     ++ ", or auto")
  ]
 
--- | The languages with a built-in catalog, plus English, as simple language codes
--- for --lang's help (eg zh rather than zh-Hans; --lang zh selects that catalog).
+-- | The languages with a built-in catalog, plus English, as the shortest tags that
+-- select them, for --lang's help (eg zh rather than zh-Hans, but pt-BR, since pt
+-- would not select it).
 builtinLanguageCodes :: [T.Text]
-builtinLanguageCodes = nubOrd $ map (T.takeWhile (/= '-')) builtinLanguages
+builtinLanguageCodes = map shortLangTag builtinLanguages
 
 -- | Flags for selecting flat/tree mode, used for reports organised by account.
 -- With a True argument, shows some extra help about inclusive/exclusive amounts.
