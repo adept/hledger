@@ -61,6 +61,10 @@ Verlustrechnung, Vermögenswerte). Anyone keeping books under HGB can put
 those in `~/.config/hledger/locale/de.po`, which overrides the built-in
 catalog entry by entry.
 
+Some entries were made by machine (Claude Opus 5.5), most of them, at
+Henning's request, the hledger-web text still untranslated at the end
+of October 2026; each is marked `# machine-translated, please review`.
+
 | English | German |
 |---|---|
 | Balance Sheet / With Equity | Bilanz / Bilanz mit Eigenkapital |
@@ -74,13 +78,30 @@ catalog entry by entry.
 | Cash flows | Kapitalflüsse |
 | Net: | Überschuss: |
 | Total / Average | Gesamt / Durchschnitt |
-| Commodity | Einheit |
+| Commodity | Einheit (in hledger-web: Einheit oder Währung) |
 | Account | Konto |
+| transaction / posting | Buchung / Buchungszeile |
+| Lot | Tranche |
+| Hidden / Shown | Ausgeblendet / Angezeigt |
 | Cost, as an asset's cost basis (holdings, --gain) | Anschaffungskosten |
 | Cost, as the price recorded in a transaction (-B, "at cost", @ prices) | Transaktionspreis |
 | Balance changes | Saldoänderungen |
 | Ending balances (historical) | Endsalden (historisch) |
 | Budget performance | Soll-Ist-Vergleich |
+
+Choices to check (as of 2026-10):
+
+- Tranche for lot, the usual finance term for a purchase lot (Lose seemed
+  wrong).
+- The holdings gain columns, abbreviated as headings: Unreal. Gew.,
+  Unreal. Gew. %, Real. Gew.; XIRR kept as is.
+- Account types: Umrechnung for Conversion, Kursgewinne for Gain,
+  Differenzen for Imbalance.
+- In Anschaffungswährung for "Per cost commodity" (holdings values), and
+  Zweitdaten for secondary dates.
+- "Equity:", the label before the balance sheet's links that hide or show
+  equity, reads Vermögen:, which elsewhere means assets; Eigenkapital:?
+- "Total value", a holdings column, reads Gesamtsumme; Gesamtwert?
 
 Known inconsistency: `examples/i18n/de.journal` names its accounts
 aktiva, passiva, erträge and aufwendungen.
