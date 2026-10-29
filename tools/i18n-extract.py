@@ -291,6 +291,47 @@ def group_of(e):
     return 'hledger' if package == 'hledger-lib' else package
 
 
+# Entries whose mistranslation would mislead about money or data, not just
+# read oddly: statement and section names, what a total means, stock vs
+# flow, valuation, gains, status, posting kinds, direction, and destructive
+# actions. Each gets KEY_TERM_NOTE, so translators take care with them and
+# reviewers check them first. As (msgctxt, msgid); --check fails if one no
+# longer exists.
+KEY_TERM_NOTE = ('Key term: a mistranslation here would mislead about money or data. '
+                 'For an accounting term, use your country\'s standard one (eg from official '
+                 'IFRS translations). Reviewers, check these first.')
+KEY_TERMS = {(None, m) for m in [
+    # statements and their sections
+    "Balance Sheet", "Balance Sheet With Equity", "Income Statement", "Cashflow Statement",
+    "Balance sheet", "Income statement", "Cashflow statement",
+    "Assets", "Liabilities", "Equity", "Revenues", "Expenses",
+    "Asset", "Liability", "Revenue", "Expense",
+    # what a total means
+    "Net:", "Net, at cost:", "Net flows:", "Unbooked gains:",
+    # stock vs flow
+    "Balance changes", "Ending balances", "Cumulative totals",
+    "(Balance Changes)", "(Cumulative Ending Balances)", "(Historical Ending Balances)",
+    "Ending balances (cumulative)", "Ending balances (historical)", "Balance brought forward",
+    # valuation
+    "Cost", "Value", "At cost", "At market value", "No market price",
+    ", converted to cost", ", valued at posting date", ", valued at period ends",
+    ", current value", ", valued at {date}",
+    "Unit price", "Total cost", "Total value",
+    # gains
+    "Unrealised gain", "Unrealised loss", "Unrealized gain", "Gain",
+    "Incremental gain", "Cumulative gain", "Historical gain", "UGain", "UGain%", "RGain",
+    # status, and kinds of posting and account
+    "Cleared", "Pending", "Unmarked", "cleared", "pending", "unmarked",
+    "Real", "Virtual", "Imbalance", "Conversion",
+    # destructive actions
+    "Are you sure? This will overwrite your journal!",
+]} | {
+    ("amounts", "Cost"), ("amounts", "Value"),
+    ("column heading", "Historical Total"), ("column heading", "Period Total"),
+    ("column heading", "To/From Account(s)"), ("column heading", "Amount Out/In"),
+}
+
+
 def render(entries, pseudo=False):
     out = [PSEUDO_HEADER if pseudo else HEADER]
     group = None
@@ -300,6 +341,8 @@ def render(entries, pseudo=False):
             group = group_of(e)
             if group in GROUP_NOTES:
                 block.append('#. ' + GROUP_NOTES[group])
+        if (e.ctx, e.msgid) in KEY_TERMS:
+            block.append('#. ' + KEY_TERM_NOTE)
         for c in e.comments:
             block.append('#. ' + c)
         block.append('#: ' + ' '.join(e.refs))
@@ -418,6 +461,9 @@ def check(po_paths, source_paths):
     entries = extract(source_paths)
     wanted = {(e.ctx, e.msgid) for e in entries}
     status = 0
+    for k in sorted(KEY_TERMS - wanted, key=by_key):
+        print("KEY_TERMS in tools/i18n-extract.py lists an entry that no longer exists: %r" % (k,))
+        status = 1
     for po in po_paths:
         if po.endswith('.pot'):
             status = max(status, check_template(po, entries, wanted))
