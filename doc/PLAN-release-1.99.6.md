@@ -85,7 +85,19 @@ In order.
   main way to send a file back, and says how to review machine-translated entries.
   Deferred: a github submission workflow (issue template; .po attachments may be refused), and Weblate
   (another service, and its continuous .po commits would need fitting to the pot-only policy).
-  Still to do: the release notes / announcement line inviting translations.
+  Still to do: the release notes / announcement line inviting translations. Draft (confirm German's status,
+  and fill in the credits once the translations are in):
+
+  > **Translations.** hledger, hledger-ui and hledger-web can show their own text in seven languages besides
+  > English. German, Russian and Simplified Chinese come from native speakers [German: confirm - Henning
+  > Thielemann's vocabulary, now reviewed by him?]. Spanish, Japanese, Irish and Hawaiian are machine-made
+  > drafts, not yet reviewed by native speakers. Text new in this release that translators didn't reach in
+  > time is machine-translated too, and marked for review.
+  > Choose one with `--lang`, eg `hledger bs --lang ja`; hledger-web follows your browser's language unless
+  > started with `--lang en`.
+  > If you speak one of these languages, a few minutes' review helps: start with the entries marked
+  > "Key term". To start a new language, run `hledger --write-lang=LANG`. See https://hledger.org/TRANSLATING.html.
+  > Thanks to [this release's translators].
 - [ ] **Review/update affected docs** (site repo)
   - [ ] **Upgrading to hledger 2** (site/src/upgrading.md): the breaking changes, for 1.x users:
     `test` -> `--test`, `activity` output, amounts that may now read as expressions,
