@@ -336,6 +336,8 @@ to it.
 
 - By mail: attach the file to a message on the
   [mail list](https://hledger.org/support.html), and someone will add it.
+  It is committed with you as its author, so your name and email
+  address appear in hledger's public git history, as for any contributor.
 - If you use GitHub: add it as `hledger-lib/locale/eo.po` and open a pull
   request. Two one-line changes are also needed to build it into hledger,
   and a maintainer will add them if you would rather not: list the file

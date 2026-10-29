@@ -83,6 +83,8 @@ to avoid interfering with branch switching; RELEASING.md should be updated from 
    translatable text. (Feature work updates only the template, so this is when the catalogs catch up.)
    The freeze is soft: a late text change runs `just i18n-pot` and `just i18n-merge` too, so main's catalogs stay current,
    and a translation received is fitted to the latest template with `msgmerge --update --no-fuzzy-matching --no-wrap`.
+   A translation sent by mail is first committed as received, with the translator as author (`git commit --author`)
+   and the message saying how it arrived; fixes and machine fills follow in a separate commit.
    A bugfix release skips this unless its changes touch translatable text.
 1. **(major or preview release) main: fill the translation gaps,** after the translation deadline and before the
    final binaries: `just i18n-pot`, `just i18n-merge`, then machine-translate every entry still untranslated in

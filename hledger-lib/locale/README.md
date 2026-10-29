@@ -21,7 +21,9 @@ hledger takes number styles from the journal and keeps ISO dates.
 People to ping when a language needs updating, eg in a pre-release
 translation sprint (see doc/RELEASING.md), and to credit. Anyone who
 sends translations or corrections for a language joins its list. Their
-email addresses are in the git log.
+email addresses are in the git log: a translation sent by mail is
+committed with the translator as its author (name and email address)
+and the maintainer as committer, with the commit message saying how it arrived.
 
 | Language | Translators | Status |
 |---|---|---|
