@@ -1,6 +1,8 @@
 # Simplified Chinese translations for hledger.
 # This file is distributed under the same license as hledger.
 # Translators: Chunhui Ouyang.
+# Entries marked "machine-translated, please review" were made by machine (Claude Opus 5.5);
+# when you have checked one, delete its mark.
 #
 msgid ""
 msgstr ""
@@ -161,6 +163,7 @@ msgctxt "month abbrev"
 msgid "Dec"
 msgstr "12 月"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 msgid "Report details"
 msgstr "报表明细"
@@ -177,12 +180,14 @@ msgstr "余额"
 msgid "Net:"
 msgstr "净值："
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 #, python-brace-format
 msgid "other {parent} ({n} account)"
 msgid_plural "other {parent} ({n} accounts)"
 msgstr[0] "其他 {parent}（{n} 个账户）"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 #, python-brace-format
 msgid "other ({n} account)"
@@ -296,6 +301,7 @@ msgstr "累积增益"
 msgid "Historical gain"
 msgstr "历史收益"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger/Hledger/Cli/Commands/Balance.hs
@@ -303,14 +309,17 @@ msgstr "历史收益"
 msgid "Posting counts"
 msgstr "分录数"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Cumulative posting counts"
 msgstr "累计分录数"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Historical posting counts"
 msgstr "历史分录数"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Transaction counts"
 msgstr "交易数"
@@ -641,10 +650,12 @@ msgstr "日记账"
 msgid "Show:"
 msgstr "显示："
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "Titles"
 msgstr "标题"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "Charts"
 msgstr "图表"
@@ -1194,6 +1205,7 @@ msgstr "现金流量表 - hledger-web"
 msgid "Shift-click selects several commodities."
 msgstr ""
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/Handler/StatementsR.hs
 msgid ""
 "All the accounts this report shows have zero balances, which are hidden. "

@@ -1,6 +1,8 @@
 # German translations for hledger.
 # This file is distributed under the same license as hledger.
 # Translators: Arthur Cinader, Henning Thielemann.
+# Entries marked "machine-translated, please review" were made by machine (Claude Opus 5.5);
+# when you have checked one, delete its mark.
 #
 msgid ""
 msgstr ""
@@ -156,6 +158,7 @@ msgctxt "month abbrev"
 msgid "Dec"
 msgstr "Dez"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 msgid "Report details"
 msgstr "Berichtsdetails"
@@ -164,6 +167,7 @@ msgstr "Berichtsdetails"
 msgid "Total"
 msgstr "Gesamt"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 msgid "Balance"
 msgstr "Saldo"
@@ -172,6 +176,7 @@ msgstr "Saldo"
 msgid "Net:"
 msgstr "Überschuss:"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 #, python-brace-format
 msgid "other {parent} ({n} account)"
@@ -179,6 +184,7 @@ msgid_plural "other {parent} ({n} accounts)"
 msgstr[0] "sonstige {parent} ({n} Konto)"
 msgstr[1] "sonstige {parent} ({n} Konten)"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 #, python-brace-format
 msgid "other ({n} account)"
@@ -224,6 +230,7 @@ msgstr "(Kumulierte Endsalden)"
 msgid "(Historical Ending Balances)"
 msgstr "(Historische Endsalden)"
 
+# machine-translated, please review
 #. the budget report title, eg "Budget performance in 2024, valued at period ends:".
 #: hledger/Hledger/Cli/CompoundBalanceCommand.hs
 #: hledger/Hledger/Cli/Commands/Balance.hs
@@ -293,6 +300,7 @@ msgstr "Kumulierter Gewinn"
 msgid "Historical gain"
 msgstr "Historischer Gewinn"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger/Hledger/Cli/Commands/Balance.hs
@@ -300,14 +308,17 @@ msgstr "Historischer Gewinn"
 msgid "Posting counts"
 msgstr "Anzahl der Buchungszeilen"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Cumulative posting counts"
 msgstr "Kumulierte Anzahl der Buchungszeilen"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Historical posting counts"
 msgstr "Historische Anzahl der Buchungszeilen"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Transaction counts"
 msgstr "Anzahl der Buchungen"
@@ -638,14 +649,17 @@ msgstr "Register"
 msgid "Show:"
 msgstr "Anzeigen:"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "Titles"
 msgstr "Titel"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "Charts"
 msgstr "Diagramme"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "All"
 msgstr "Alles"
@@ -715,6 +729,7 @@ msgstr "Voriger Bericht"
 msgid "Go to the previous report"
 msgstr "Wechsle zum vorigen Bericht"
 
+# machine-translated, please review
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid "Net, at cost:"
@@ -1193,6 +1208,7 @@ msgstr "Kapitalflussrechnung - hledger-web"
 msgid "Shift-click selects several commodities."
 msgstr "Shift+Maustaste wählt mehrere Einheiten oder Währungen"
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/Handler/StatementsR.hs
 msgid ""
 "All the accounts this report shows have zero balances, which are hidden. "
@@ -1372,6 +1388,7 @@ msgstr "Beträge:"
 msgid "As recorded"
 msgstr "Wie verbucht"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "amounts"
@@ -1389,11 +1406,13 @@ msgstr "Wert"
 msgid "Show amounts in the commodities they were recorded in"
 msgstr "Zeige Beträge in den Währungen, in denen sie verbucht sind"
 
+# machine-translated, please review
 #. the label before a report's amount conversion links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "At cost"
 msgstr "Zum Transaktionspreis"
 
+# machine-translated, please review
 #. the label before a report's amount conversion links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show amounts converted to their cost, as recorded in transactions (-B)"
@@ -2180,6 +2199,7 @@ msgctxt "accounts"
 msgid "tree / list"
 msgstr "Baum / Liste"
 
+# machine-translated, please review
 #: hledger-web/templates/default-layout.hamlet
 msgid "at cost"
 msgstr "zum Transaktionspreis"

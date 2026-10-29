@@ -1,6 +1,8 @@
 # Russian translations for hledger.
 # This file is distributed under the same license as hledger.
 # Translators: Daniil Iaitskov.
+# Entries marked "machine-translated, please review" were made by machine (Claude Opus 5.5);
+# when you have checked one, delete its mark.
 #
 msgid ""
 msgstr ""
@@ -157,6 +159,7 @@ msgctxt "month abbrev"
 msgid "Dec"
 msgstr "Дек"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 msgid "Report details"
 msgstr "Подробности отчёта"
@@ -165,6 +168,7 @@ msgstr "Подробности отчёта"
 msgid "Total"
 msgstr "Итого"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 msgid "Balance"
 msgstr "Сальдо"
@@ -173,6 +177,7 @@ msgstr "Сальдо"
 msgid "Net:"
 msgstr "Чистый итог:"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 #, python-brace-format
 msgid "other {parent} ({n} account)"
@@ -181,6 +186,7 @@ msgstr[0] "прочие {parent} ({n} счёт)"
 msgstr[1] "прочие {parent} ({n} счёта)"
 msgstr[2] "прочие {parent} ({n} счетов)"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Chart.hs
 #, python-brace-format
 msgid "other ({n} account)"
@@ -296,6 +302,7 @@ msgstr "Накопленный прирост"
 msgid "Historical gain"
 msgstr "Исторический прирост"
 
+# machine-translated, please review
 #. the depth limit, in the list of options in effect.
 #. the label before a report's calculation links, and the links' text and tooltips.
 #: hledger/Hledger/Cli/Commands/Balance.hs
@@ -303,14 +310,17 @@ msgstr "Исторический прирост"
 msgid "Posting counts"
 msgstr "Количество проводок"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Cumulative posting counts"
 msgstr "Накопленное количество проводок"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Historical posting counts"
 msgstr "Историческое количество проводок"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid "Transaction counts"
 msgstr "Количество транзакций"
@@ -641,14 +651,17 @@ msgstr "Регистр"
 msgid "Show:"
 msgstr "Показывать:"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "Titles"
 msgstr "Заголовки"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "Charts"
 msgstr "Графики"
 
+# machine-translated, please review
 #: hledger/Hledger/Cli/Commands/Run.hs
 msgid "All"
 msgstr "Всё"
@@ -1196,6 +1209,7 @@ msgstr "отчёт о движении денежных средств - hledger
 msgid "Shift-click selects several commodities."
 msgstr ""
 
+# machine-translated, please review
 #: hledger-web/Hledger/Web/Handler/StatementsR.hs
 msgid ""
 "All the accounts this report shows have zero balances, which are hidden. "

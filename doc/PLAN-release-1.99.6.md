@@ -124,6 +124,13 @@ In order.
 - [ ] **Late text changes**: the freeze is soft. Prefer fixes that don't change text; any that do land by
   Sat morning, with `just i18n-pot` and `just i18n-merge` (during the freeze the catalogs on main
   follow the template, so translators' files stay current). No follow-up request unless there are several and time allows.
+- [x] **Mark the human catalogs' machine-made entries**, as promised to Henning once he finished.
+  Done (Oct 29): de 18, ru 12, zh-Hans 10 entries marked `# machine-translated, please review`, with a header
+  note. They are the entries whose current text first appeared in a maintainer commit (found by tracing each
+  msgstr through the file's history, as blame is muddied by msgmerge reflows): the chart strings, run's page
+  links, "Report details", the zero-balances message, and in de the "Transaktionspreis" cost entries.
+  Not marked: Dmitry Astapov's ru wording review (812f719b2), and trims or fixes of human text
+  (the shortened help lines, the boolean-query parenthesis).
 - [ ] **Fill the gaps** (after the deadline, before `just ghbin`): `just i18n-pot`, `just i18n-merge`
   (which now unwraps the catalogs, one line per string: a one-off layout diff, kept separate in its own commit), then
   machine-translate every entry still untranslated in every catalog, each marked with the translator comment
