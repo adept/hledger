@@ -30,6 +30,7 @@ email addresses are in the git log.
 | fr | | machine-made, not yet checked by a native speaker |
 | ga | | machine-made, not yet checked by a native speaker |
 | haw | | machine-made, not yet checked by a native speaker |
+| it | Diego Depaoli | a draft, completed by machine; machine-made entries are marked |
 | ja | | machine-made, not yet checked by a native speaker |
 | pt-BR | | machine-made, not yet checked by a native speaker |
 | ru | Daniil Iaitskov (@yaitskov) | |
@@ -366,3 +367,42 @@ Choices to check:
   its Daily interval link; the journal file is "o diário".
 - Register is "Extrato", like a bank statement, and posting is "partida"
   (as in partidas dobradas), leaving "lançamento" for journal entries.
+
+## Italian
+
+Translators: Diego Depaoli, whose untested draft (October 2026) covered
+about 200 of the entries. The rest were filled in by machine (Claude Opus
+5.5), which also fixed some errors in the draft (eg "quadrimestrale" for
+quarterly, balances translated as gains); every entry added or changed
+that way is marked `# machine-translated, please review`. Regional tags
+like `it-CH` or `it_IT` select it too. Viewers are addressed informally
+(tu), as in the draft.
+
+| English | Italian |
+|---|---|
+| Balance Sheet / With Equity | Bilancio / Bilancio con patrimonio netto |
+| Income Statement | Conto economico |
+| Cashflow Statement | Rendiconto finanziario |
+| Assets / Liabilities / Equity | Attività / Passività / Patrimonio netto |
+| Revenues / Expenses | Entrate / Uscite |
+| Net: | Netto: |
+| Total / Average | Totale / Media |
+| Account / Amount / Commodity | Conto / Importo / Unità di conto |
+| transaction / posting | registrazione / movimento |
+| Journal / Register / Holdings | Giornale / Registro / Portafoglio |
+| Balance / Balance changes / Ending balances | Saldo / Variazioni di saldo / Saldi finali |
+| Cost / Value | Costo / Valore |
+| Unrealized gain / loss | Plusvalenza / Minusvalenza latente |
+| Cleared / Pending / Unmarked | Riconciliate / In sospeso / Non contrassegnate |
+| Quarterly / Biweekly | Trimestrale / Quindicinale |
+
+Choices to check:
+
+- Bilancio for Balance Sheet, as in the draft; strictly the bilancio is
+  the whole set of statements, and the balance sheet is the stato
+  patrimoniale.
+- Movimento for posting, so that "registrazione" means only a
+  transaction (the draft used it for both).
+- The links that show or hide something (zero balances, equity, costs,
+  lots, closed positions) read Mostra / Nascondi, avoiding agreement with
+  nouns of different genders.

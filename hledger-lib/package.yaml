@@ -38,6 +38,7 @@ extra-source-files:
 - locale/fr.po
 - locale/ga.po
 - locale/haw.po
+- locale/it.po
 - locale/ja.po
 - locale/pt-BR.po
 - locale/ru.po
