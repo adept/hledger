@@ -88,11 +88,12 @@ In order.
   Still to do: the release notes / announcement line inviting translations. Draft (update the names from the
   README's Translators table once the translations are in):
 
-  > **Translations.** hledger, hledger-ui and hledger-web can show their own text in nine languages besides
-  > English: German (Arthur Cinader, Henning Thielemann), Russian (Daniil Iaitskov) and Simplified Chinese
-  > (Chunhui Ouyang); and Spanish, French, Brazilian Portuguese, Japanese, Irish and Hawaiian, machine-made
-  > drafts not yet checked by a native speaker. Text new in this release that translators didn't reach in
-  > time is machine-translated too, and marked for review.
+  > **Translations.** hledger, hledger-ui and hledger-web can show their own text in ten languages besides
+  > English: German (Arthur Cinader, Henning Thielemann), Russian (Daniil Iaitskov), Simplified Chinese
+  > (Chunhui Ouyang) and Italian (Diego Depaoli, a draft completed by machine); and Spanish, French,
+  > Brazilian Portuguese, Japanese, Irish and Hawaiian, machine-made drafts not yet checked by a native
+  > speaker. Text new in this release that translators didn't reach in time is machine-translated too, and
+  > marked for review.
   > Choose one with `--lang`, eg `hledger bs --lang ja`; hledger-web follows your browser's language unless
   > started with `--lang en`.
   > If you speak one of these languages, a few minutes' review helps: start with the entries marked
@@ -117,7 +118,7 @@ In order.
   - commit on main with the translator as author (`git commit --author`); cherry-pick to the release branch
   - add each translator to the language's list in hledger-lib/locale/README.md (Translators) and its catalog
     header (`# Translators: ...`), and credit them in the changelog / release notes
-  - add additional languages. Done (Oct 29): Irish, Japanese, Hawaiian, French and Brazilian Portuguese, machine-made, built in and labelled
+  - add additional languages. Done (Oct 29): Irish, Japanese, Hawaiian, French and Brazilian Portuguese, machine-made, and Italian (Diego Depaoli's draft, completed by machine), built in and labelled
     unreviewed in their README sections; still to do: ask for native reviewers. They follow the template,
     so `just i18n-merge` keeps them current like the others, and the gap filling covers them.
 - [ ] **Late text changes**: the freeze is soft. Prefer fixes that don't change text; any that do land by
