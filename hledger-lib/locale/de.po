@@ -1,5 +1,6 @@
 # German translations for hledger.
 # This file is distributed under the same license as hledger.
+# Translators: Arthur Cinader, Henning Thielemann.
 #
 msgid ""
 msgstr ""
@@ -227,7 +228,7 @@ msgstr "(Historische Endsalden)"
 #: hledger/Hledger/Cli/CompoundBalanceCommand.hs
 #: hledger/Hledger/Cli/Commands/Balance.hs
 msgid ", converted to cost"
-msgstr ", zu Anschaffungskosten"
+msgstr ", zum Transaktionspreis"
 
 #. the budget report title, eg "Budget performance in 2024, valued at period ends:".
 #: hledger/Hledger/Cli/CompoundBalanceCommand.hs
@@ -544,7 +545,7 @@ msgstr "Kapitalflüsse"
 
 #: hledger/Hledger/Cli/Commands/Holdings.hs
 msgid "Cost"
-msgstr "Kosten"
+msgstr "Anschaffungskosten"
 
 #: hledger/Hledger/Cli/Commands/Holdings.hs
 msgid "Unrealised gain"
@@ -717,7 +718,7 @@ msgstr "Wechsle zum vorigen Bericht"
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
 msgid "Net, at cost:"
-msgstr "Überschuss, zu den Kosten:"
+msgstr "Überschuss, zum Transaktionspreis:"
 
 #. the go menu's items for the next and previous page, and their tooltips.
 #: hledger-web/Hledger/Web/App.hs
@@ -1048,7 +1049,7 @@ msgstr "Preis einer Einheit"
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
 msgid "Total cost"
-msgstr "Gesamtkosten"
+msgstr "Anschaffungskosten gesamt"
 
 #. the holdings table's column headings. The cost heading is "Unit cost", "Avg cost", or "Unit/Avg cost".
 #: hledger-web/Hledger/Web/Handler/HoldingsR.hs
@@ -1375,7 +1376,7 @@ msgstr "Wie verbucht"
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgctxt "amounts"
 msgid "Cost"
-msgstr "Kosten"
+msgstr "Transaktionspreis"
 
 #. the depth limit, in the list of options in effect.
 #: hledger-web/Hledger/Web/Widget/Common.hs
@@ -1391,12 +1392,12 @@ msgstr "Zeige Beträge in den Währungen, in denen sie verbucht sind"
 #. the label before a report's amount conversion links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "At cost"
-msgstr "Zu den Kosten"
+msgstr "Zum Transaktionspreis"
 
 #. the label before a report's amount conversion links, and the links' text and tooltips.
 #: hledger-web/Hledger/Web/Widget/Common.hs
 msgid "Show amounts converted to their cost, as recorded in transactions (-B)"
-msgstr "Zeige Mengen umgerechnet zu ihren verbuchten Kosten (-B)"
+msgstr "Zeige Mengen umgerechnet zum verbuchten Transaktionspreis (-B)"
 
 #. the label before a report's amount conversion links, and the links' text and tooltips.
 #. the label before the holdings page's valuation links, and the links' text and tooltips.
@@ -2181,7 +2182,7 @@ msgstr "Baum / Liste"
 
 #: hledger-web/templates/default-layout.hamlet
 msgid "at cost"
-msgstr "zu Kosten"
+msgstr "zum Transaktionspreis"
 
 #: hledger-web/templates/default-layout.hamlet
 msgid "at market value"

@@ -73,6 +73,8 @@ catalog entry by entry.
 | Total / Average | Gesamt / Durchschnitt |
 | Commodity | Einheit |
 | Account | Konto |
+| Cost, as an asset's cost basis (holdings, --gain) | Anschaffungskosten |
+| Cost, as the price recorded in a transaction (-B, "at cost", @ prices) | Transaktionspreis |
 | Balance changes | Saldoänderungen |
 | Ending balances (historical) | Endsalden (historisch) |
 | Budget performance | Soll-Ist-Vergleich |
