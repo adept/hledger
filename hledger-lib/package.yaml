@@ -36,6 +36,7 @@ extra-source-files:
 - locale/de.po
 - locale/es.po
 - locale/ga.po
+- locale/haw.po
 - locale/ja.po
 - locale/ru.po
 - locale/zh-Hans.po

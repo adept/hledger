@@ -27,6 +27,7 @@ the git log.
 | de | Henning Thielemann | @thielema | chose the vocabulary (#2735) |
 | es | - | - | machine-made; a native speaker to review it is wanted |
 | ga | - | - | machine-made; a native speaker to review it is wanted |
+| haw | - | - | machine-made; a native speaker to review it is wanted |
 | ja | - | - | machine-made; a native speaker to review it is wanted |
 | ru | Daniil Iaitskov | @yaitskov | translator (#2773) |
 | zh-Hans | Chunhui Ouyang | @jack9603301 | translator (#2757, #2761) |
@@ -215,3 +216,40 @@ Choices to check:
 - The least certain: mutations in phrases like "cuntais shócmhainne",
   the long help texts, and the shortened holdings column headings
   (Gnóth. neamhr., Gnóth. réad.).
+
+## Hawaiian
+
+Machine-made (by Claude Opus 5.5) and not yet reviewed by a native
+speaker; corrections are welcome. Hawaiian has little established
+accounting vocabulary, so many terms are descriptive phrases, and this
+is the least certain of the machine-made catalogs. Regional tags like
+`haw-US` select it too.
+
+| English | Hawaiian |
+|---|---|
+| Balance Sheet / With Equity | Pepa Kaulike / Pepa Kaulike me ke Kumu Waiwai |
+| Income Statement | Hōʻike Loaʻa a me Hoʻolilo |
+| Cashflow Statement | Hōʻike Kahe Kālā |
+| Assets / Liabilities / Equity | Nā Waiwai / Nā ʻAiʻē / Kumu Waiwai |
+| Revenues / Expenses | Loaʻa / Hoʻolilo |
+| Net: | Maʻemaʻe: |
+| Total / Average | Huina / Awelika |
+| Account / Amount / Commodity | Moʻokālā / Ka nui / Ana |
+| transaction / posting / journal | hana kālā / laina / puke moʻolelo |
+| Register / Holdings | Papa Helu / Nā Waiwai Paʻa |
+| Balance | Koena |
+| Cost / Market value | Kumukūʻai / Kumukūʻai mākeke |
+| Gain / Loss | Puka / Poho |
+| Monthly Balance Sheet | Pepa Kaulike o ka Mahina |
+| Months | Ianuali ... Kekemapa; short forms Ian. ... Kek., as in CLDR |
+
+Choices to check:
+
+- Ana ("measure, unit") for Commodity, and laina ("line") for posting.
+- Kumu Waiwai for Equity, and waiwai maʻemaʻe for net worth.
+- Maʻemaʻe ("clean") for Net, by analogy with net weight.
+- The interval links are "I ka lā", "I ka mahina" ("per day", "per
+  month"), so that the daily link is not "Lā", which is the Date column.
+- Hōʻike is both "show" (in the tooltips) and "report" (in titles).
+- The shortened holdings column headings (Puka L.ʻO., Puka L.) are
+  guesses.
