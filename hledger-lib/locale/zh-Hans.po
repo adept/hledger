@@ -1,5 +1,6 @@
-# Translation template for hledger.
+# Simplified Chinese translations for hledger.
 # This file is distributed under the same license as hledger.
+# Translators: Chunhui Ouyang.
 #
 msgid ""
 msgstr ""

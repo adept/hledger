@@ -1,7 +1,7 @@
 # Hawaiian translations for hledger.
 # This file is distributed under the same license as hledger.
 # Terminology and choices to check: see hledger-lib/locale/README.md, Hawaiian.
-# Machine-made (Claude Opus 5.5); needs review by a native speaker.
+# Machine-made (Claude Opus 5.5); not yet checked by a native speaker.
 #
 msgid ""
 msgstr ""

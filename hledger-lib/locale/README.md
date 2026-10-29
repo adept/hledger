@@ -19,18 +19,19 @@ hledger takes number styles from the journal and keeps ISO dates.
 ## Translators
 
 People to ping when a language needs updating, eg in a pre-release
-translation sprint (see doc/RELEASING.md). Their email addresses are in
-the git log.
+translation sprint (see doc/RELEASING.md), and to credit. Anyone who
+sends translations or corrections for a language joins its list. Their
+email addresses are in the git log.
 
-| Language | Name | GitHub | Role |
-|---|---|---|---|
-| de | Henning Thielemann | @thielema | chose the vocabulary (#2735) |
-| es | - | - | machine-made; a native speaker to review it is wanted |
-| ga | - | - | machine-made; a native speaker to review it is wanted |
-| haw | - | - | machine-made; a native speaker to review it is wanted |
-| ja | - | - | machine-made; a native speaker to review it is wanted |
-| ru | Daniil Iaitskov | @yaitskov | translator (#2773) |
-| zh-Hans | Chunhui Ouyang | @jack9603301 | translator (#2757, #2761) |
+| Language | Translators | Status |
+|---|---|---|
+| de | Arthur Cinader (@acinader), Henning Thielemann (@thielema) | |
+| es | | machine-made, not yet checked by a native speaker |
+| ga | | machine-made, not yet checked by a native speaker |
+| haw | | machine-made, not yet checked by a native speaker |
+| ja | | machine-made, not yet checked by a native speaker |
+| ru | Daniil Iaitskov (@yaitskov) | |
+| zh-Hans | Chunhui Ouyang (@jack9603301) | |
 
 Also interested in hledger's i18n: Arthur Cinader (@acinader), who built
 it (#2736), and @mildred, @alerque (#1025) and @weakish (#231), who asked
@@ -43,6 +44,8 @@ marking strings and the `just i18n-*` tooling, are in
 [doc/TRANSLATING.md](../../doc/TRANSLATING.md).
 
 ## German
+
+Translators: Arthur Cinader, Henning Thielemann.
 
 The report vocabulary follows Henning Thielemann's choices in PR #2735,
 so that the two catalogs agree: everyday, cash-basis terms (Einnahmen,
@@ -83,8 +86,8 @@ happen to share.
 
 ## Spanish
 
-Machine-made (by Claude Opus 5.5) and not yet reviewed by a native
-speaker; corrections are welcome. It aims at neutral Spanish, readable in
+Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
+corrections are welcome. It aims at neutral Spanish, readable in
 Spain and Latin America, so regional tags like `es-MX` or `es_ES` select
 it too. Viewers are addressed formally (usted).
 
@@ -127,7 +130,7 @@ Notes on the choices:
 
 ## Russian
 
-Contributed by Daniil Iaitskov (#2773), with some fixes from Dmitry Astapov.
+Translators: Daniil Iaitskov (#2773).
 Regional tags like `ru-RU` or `ru_RU` select it too.
 
 | English | Russian |
@@ -150,14 +153,14 @@ Regional tags like `ru-RU` or `ru_RU` select it too.
 
 ## Simplified Chinese
 
-Contributed by Chunhui Ouyang, as `zh_CN.po`; renamed to `zh-Hans.po`,
+Translators: Chunhui Ouyang. Contributed as `zh_CN.po`; renamed to `zh-Hans.po`,
 the tag that `zh`, `zh_CN` and `zh-CN` all resolve to. It was later
 brought up to date with the current template by its contributor.
 
 ## Japanese
 
-Machine-made (by Claude Opus 5.5) and not yet reviewed by a native
-speaker; corrections are welcome. The statement names follow Japanese
+Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
+corrections are welcome. The statement names follow Japanese
 GAAP usage, and the account words match `examples/i18n/ja.journal`.
 Regional tags like `ja-JP` or `ja_JP` select it too.
 
@@ -187,8 +190,8 @@ Choices to check:
 
 ## Irish
 
-Machine-made (by Claude Opus 5.5) and not yet reviewed by a native
-speaker; corrections are welcome. Regional tags like `ga-IE` or `ga_IE`
+Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
+corrections are welcome. Regional tags like `ga-IE` or `ga_IE`
 select it too.
 
 | English | Irish |
@@ -219,8 +222,8 @@ Choices to check:
 
 ## Hawaiian
 
-Machine-made (by Claude Opus 5.5) and not yet reviewed by a native
-speaker; corrections are welcome. Hawaiian has little established
+Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
+corrections are welcome. Hawaiian has little established
 accounting vocabulary, so many terms are descriptive phrases, and this
 is the least certain of the machine-made catalogs. Regional tags like
 `haw-US` select it too.

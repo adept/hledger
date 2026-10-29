@@ -85,14 +85,14 @@ In order.
   main way to send a file back, and says how to review machine-translated entries.
   Deferred: a github submission workflow (issue template; .po attachments may be refused), and Weblate
   (another service, and its continuous .po commits would need fitting to the pot-only policy).
-  Still to do: the release notes / announcement line inviting translations. Draft (confirm German's status,
-  and fill in the credits once the translations are in):
+  Still to do: the release notes / announcement line inviting translations. Draft (update the names from the
+  README's Translators table once the translations are in):
 
   > **Translations.** hledger, hledger-ui and hledger-web can show their own text in seven languages besides
-  > English. German, Russian and Simplified Chinese come from native speakers [German: confirm - Henning
-  > Thielemann's vocabulary, now reviewed by him?]. Spanish, Japanese, Irish and Hawaiian are machine-made
-  > drafts, not yet reviewed by native speakers. Text new in this release that translators didn't reach in
-  > time is machine-translated too, and marked for review.
+  > English: German (Arthur Cinader, Henning Thielemann), Russian (Daniil Iaitskov) and Simplified Chinese
+  > (Chunhui Ouyang); and Spanish, Japanese, Irish and Hawaiian, machine-made drafts not yet checked by a
+  > native speaker. Text new in this release that translators didn't reach in time is machine-translated
+  > too, and marked for review.
   > Choose one with `--lang`, eg `hledger bs --lang ja`; hledger-web follows your browser's language unless
   > started with `--lang en`.
   > If you speak one of these languages, a few minutes' review helps: start with the entries marked
@@ -115,7 +115,8 @@ In order.
     "... ())": after the merge, copy any translation of it from the obsolete `#~` entry, adding the `)`.
   - try it in the CLI (`--lang`), hledger-ui and hledger-web (see the translations skill)
   - commit on main with the translator as author (`git commit --author`); cherry-pick to the release branch
-  - credit the translators in the changelog / release notes
+  - add each translator to the language's list in hledger-lib/locale/README.md (Translators) and its catalog
+    header (`# Translators: ...`), and credit them in the changelog / release notes
   - add additional languages. Done (Oct 29): Irish, Japanese and Hawaiian, machine-made, built in and labelled
     unreviewed in their README sections; still to do: ask for native reviewers. They follow the template,
     so `just i18n-merge` keeps them current like the others, and the gap filling covers them.

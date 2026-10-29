@@ -1,7 +1,7 @@
 # Spanish translations for hledger.
 # This file is distributed under the same license as hledger.
 # Neutral Spanish, for Spain and Latin America; see hledger-lib/locale/README.md.
-# Machine-made (Claude Opus 5.5); needs review by a native speaker.
+# Machine-made (Claude Opus 5.5); not yet checked by a native speaker.
 #
 msgid ""
 msgstr ""
