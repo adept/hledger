@@ -161,6 +161,33 @@ Translators: Chunhui Ouyang. Contributed as `zh_CN.po`; renamed to `zh-Hans.po`,
 the tag that `zh`, `zh_CN` and `zh-CN` all resolve to. It was later
 brought up to date with the current template by its contributor.
 
+The terms it uses, which machine-filled entries should follow:
+
+| English | Simplified Chinese |
+|---|---|
+| Balance Sheet / With Equity | 资产负债表 / 包含权益的资产负债表 |
+| Income Statement | 损益表 |
+| Cashflow Statement | 现金流量表 |
+| Assets / Liabilities / Equity | 资产 / 负债 / 权益 |
+| Revenues / Expenses | 收入 / 支出 |
+| Net: | 净值： |
+| Total / Average | 总计 / 平均 |
+| Account / Amount / Commodity | 账户 / 金额 / 商品 |
+| Journal (hledger-web's view) / General Journal | 日记账 / 通用日记账 |
+| Ending balances | 期末余额 |
+| Balance brought forward | 上期结转余额 |
+| Daily / Monthly | 每日 / 每月度 (eg 月度资产负债表) |
+
+Choices to check (as of 2026-10):
+
+- "Balance changes", the title of a plain `balance` report, is 平衡性调整,
+  which reads as "balancing adjustments"; 余额变动 says "changes in
+  balance".
+- "Register", the sheet name of `register`'s spreadsheet output, is also
+  日记账, like the Journal view; 明细账 would distinguish it.
+- 净值 for "Net:" reads as net worth, which fits the balance sheet more
+  than the income statement.
+
 ## Japanese
 
 Machine-made (Claude Opus 5.5), not yet checked by a native speaker;
